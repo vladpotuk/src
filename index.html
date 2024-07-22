@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<>, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/scss/main.css">
-</head>
-<body>
-    <header clas="header">Header</header>
-    <div class="aside"></div>
-    <footer class="footer">Footer</footer>
+    <link rel="stylesheet" href="./style/scss/main.css" />
+  </head>
+  <body>
+    <header class="header">Header</header>
+    <div class="aside">
+      <div class="selectFilter">
+        <label for="processorFilter">Процесор:</label>
+        <select name="processorFilter" id="processorFilter">
+          <option value="all">Всі</option>
+        </select>
+        <label for="ramFilter">Оперативна пам'ять:</label>
+        <select name="ramFilter" id="ramFilter">
+          <option value="all">Всі</option>
+        </select>
+        <label for="storageFilter">Жорсткий диск:</label>
+        <select name="storageFilter" id="storageFilter">
+          <option value="all">Всі</option>
+        </select>
+        <label for="displayFilter">Дисплей:</label>
+        <select name="displayFilter" id="displayFilter">
+          <option value="all">Всі</option>
+        </select>
+        <label for="graphicsFilter">Відеокарта:</label>
+        <select name="graphicsFilter" id="graphicsFilter">
+          <option value="all">Всі</option>
+        </select>
+      </div>
+      <div>
+        <label for="priceFilter"></label>
+        <input type="range" id="priceFilter" min="0" max="3000" step="1" />
+        <span id="priceValue">0</span>
+      </div>
+    </div>
+
     <main class="main">
-        <div class="goods_container"></div>
+      <div class="goods_container"></div>
     </main>
+    <footer class="footer">Footer</footer>
     <script src="./index.js" type="module"></script>
-</body>
+  </body>
 </html>

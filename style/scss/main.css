@@ -57,6 +57,7 @@ body {
   text-align: center;
 }
 .card .buyBtn {
+  width: 100%;
   background-color: rgb(49, 145, 242);
   border: none;
   padding: 10px 15px;
@@ -71,4 +72,22 @@ body {
 }
 .card .buyBtn:hover {
   background-color: rgb(28, 121, 214);
+}
+
+.selectFilter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 20px;
+}
+.selectFilter select {
+  width: 50%;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border: 1px solid rgb(48, 148, 243);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
