@@ -33,6 +33,31 @@ body {
   grid-area: main;
 }
 
+.header {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4.5px 4.5px 6.5px rgb(172, 172, 172);
+  background-color: rgb(223, 223, 223);
+  gap: 20px;
+  padding: 20px 50px;
+  margin-bottom: 50px;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header ul li {
+  cursor: pointer;
+}
+.header img {
+  width: 50px;
+  cursor: pointer;
+}
+
 .goods_container {
   width: 90%;
   display: grid;
@@ -90,4 +115,42 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.cart {
+  width: 60%;
+  min-height: 50vh;
+  background-color: rgb(227, 227, 227);
+  box-shadow: 4.5px 4.5px 6.5px rgb(172, 172, 172);
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  text-align: center;
+  display: none;
+}
+.cart #close {
+  color: red;
+  font-weight: 800;
+  cursor: pointer;
+}
+.cart ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.cart ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cart ul li img {
+  width: 10%;
+}
+
+.show {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,39 @@
+.cart{
+    width: 60%;
+    min-height: 50vh;
+    background-color: rgb(227, 227, 227);
+    box-shadow: 4.5px 4.5px 6.5px rgb(172, 172, 172);
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    text-align: center;
+    display: none;
+    
+    
+    #close{
+        color: red;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        li{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img{
+                width: 10%;
+            }
+        }
+    }
+
+}
+.show{
+    display: block;
+}
